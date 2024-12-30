@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nav-bg': '#F9F7F3',
+                'btn-bg': '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class=" bg-nav-bg ">
+        <div class="w-11/12 mx-auto py-3">
+            <!-- nav bar start here -->
+            <div class="navbar  ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <button class="btn btn-active px-8 font-bold bg-btn-bg">Blog</button>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center gap-3">
+                    <img src="./assets/logo.png" alt="">
+                  <a class="font-bold text text-xl">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost ">
+                    <div>
+                        <img src="./assets/coin.png" alt="" srcset="">
+                    </div>
+    
+                    <h3>5500</h3>
+                    BDT
+                  </button>
+                 
+                </div>
+              </div>
+
+              <!-- nav bar start here -->
+
+              
+        </div>
+
+       
+    </div>
+
+     <!-- Banner start here -->
+     <div class="w-11/12 mx-auto flex justify-center my-8 gap-4">
+        <button class="btn btn-active px-8 font-bold bg-btn-bg">Donation</button>
+        <button class="btn btn-active px-8 font-bold ">History</button>
+       </div>
+        <!-- Banner end here -->
+
+        <script src="./js/home.js"></script>
+</body>
+</html>
