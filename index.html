@@ -20,7 +20,8 @@
         }
       </script>
 </head>
-<body>
+<body class="relative z-50">
+    <header id="header" class="sticky top-0">
     <div class=" bg-nav-bg ">
         <div class="w-11/12 mx-auto py-3">
             <!-- nav bar start here -->
@@ -49,7 +50,7 @@
                         <img src="./assets/coin.png" alt="" srcset="">
                     </div>
     
-                    <h3>5500</h3>
+                    <h3 id="curr-balance">5500</h3>
                     BDT
                   </button>
                  
@@ -67,10 +68,64 @@
      <!-- Banner start here -->
      <div class="w-11/12 mx-auto flex justify-center my-8 gap-4">
         <button class="btn btn-active px-8 font-bold bg-btn-bg">Donation</button>
-        <button class="btn btn-active px-8 font-bold ">History</button>
+        <button id="history-btn" class="btn  px-8 font-bold ">History</button>
        </div>
         <!-- Banner end here -->
+    </header>
 
+    <main class="w-11/12 mx-auto py-3">
+
+        <!-- modal start here -->
+        <div id="modal-id" class="card bg-gray-100 shadow-lg text-black  w-96 absolute mx-auto   right-1/2 left-1/2 items-center z-30 hidden">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Congratulations!</h2>
+              <img src="./assets/coin.png" alt="">
+              <p>You have donated for Humankind</p>
+              <h3>Successfully</h3>
+              <div class="card-actions justify-end">
+                <button id="modal-btn" class="btn btn-primary">Close Confirm</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- modal start here -->
+        <div id="card-id" class="card lg:card-side bg-base-100 shadow-xl">
+            <img src="./assets/feni.png" alt="" srcset="">
+
+            <!-- text div -->
+            <div class="card-body">
+                <div class=" shadow bg-nav-bg w-40 p-3">
+                    <div class=" flex  items-center gap-2 ">
+                        <div>
+                            <img src="./assets/coin.png" alt="" srcset="">
+                        </div>
+                      <div class="text-xl font-bold" id="donate-balance">500</div>
+                      <div class="">BDT</div>
+                    </div>
+                  </div>
+                
+              <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+              <p>Southeastern Bangladesh is currently enduring a devastating flood crisis due to continuous heavy rainfall and the rising levels of rivers. Regions of Feni, Comilla, and Noakhali are among the hardest hit, where entire communities have been cut off as roads and highways are submerged, leaving over 1.5 million people stranded.JAAGO Foundation is stepping in to provide critical relief in these flood-stricken areas. Through our youth wing, Volunteer for Bangladesh, we are distributing dry foods and providing medical assistance in Feni, Comilla, and Noakhali regions. Once the waters recede, our volunteers will work tirelessly to rehabilitate the affected families.</p>
+              <input
+                type="text"
+                placeholder="Write your donation Amount"
+                id="inputField-1" class="input input-bordered input-md w-full  " />
+
+                <!--add addMoney-btn   -->
+              <div id="addMoney-btn" class="card-actions justify-center ">
+                <button  class="btn  text-black bg-btn-bg">Donate Now</button>
+              </div>
+
+             
+            </div>
+          </div>
+
+    </main>
+ 
+    <script src="./js/ultilities.js"></script>
+    <script src="./js/modal.js"></script>
+   <script src="./js/cashout.js"></script>
         <script src="./js/home.js"></script>
+       
 </body>
 </html>
