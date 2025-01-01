@@ -1,14 +1,22 @@
 // first card modals
 document.getElementById('addMoney-btn').addEventListener('click',function(){
     const input1=inputfieldValue('inputField-1');
-    if(input1<0){
+    
+    const currentMoney=currentBalanceInput('curr-balance');
+    if(input1>currentMoney || input1<0  ){
+        alert ('your enter negative value')
         return
     }
+
+   
     const modal=blurOption('modal-id');
     const headerBlur=opacity('header');
     const cardBlur=opacity('card-id');
     const cardId2=opacity('card-id-2')
     console.log(modal)
+
+
+    
 })
 
 
@@ -27,7 +35,9 @@ document.getElementById('modal-btn').addEventListener('click',function(){
 
 document.getElementById('addMoney-btn-2').addEventListener('click',function(){
     const input2=inputfieldValue('inputField-2');
-    if(input2<0){
+    const currentMoney=currentBalanceInput('curr-balance');
+    if(input2>currentMoney || input2<0){
+        alert ('your enter negative value')
         return
     }
     const modal=blurOption('modal-id-2');
@@ -50,11 +60,13 @@ document.getElementById('modal-id-2').addEventListener('click',function(){
 })
 
 // 3rd card
-// second card modals
+
 
 document.getElementById('addMoney-btn-3').addEventListener('click',function(){
     const input3=inputfieldValue('inputField-3');
-    if(input3<0){
+    const currentMoney=currentBalanceInput('curr-balance');
+    if(input3>currentMoney || input3<0){
+        alert ('your enter negative value')
         return
     }
     const modal=blurOption('modal-id-3');

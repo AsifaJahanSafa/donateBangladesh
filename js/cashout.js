@@ -14,8 +14,9 @@ document.getElementById('addMoney-btn').addEventListener('click',function(){
     document.getElementById('curr-balance').innerText=updateMoney;
     console.log(updateMoney)
 
+   
 
-    
+   
    
 })
 

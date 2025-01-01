@@ -40,7 +40,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="navbar-center gap-3">
+                <div class="navbar-center gap-3 hidden lg:flex ">
                     <img src="./assets/logo.png" alt="">
                   <a class="font-bold text text-xl">Donate Bangladesh</a>
                 </div>
@@ -67,14 +67,15 @@
 
      <!-- Banner start here -->
      <div class="w-11/12 mx-auto flex justify-center my-8 gap-4">
-        <button class="btn btn-active px-8 font-bold bg-btn-bg">Donation</button>
-        <button id="history-btn" class="btn  px-8 font-bold ">History</button>
+        <button id="donation-btn" class="btn  px-8 font-bold bg-btn-bg ">Donation</button>
+        <button id="history-btn" class="btn  px-8 font-bold">History</button>
        </div>
         <!-- Banner end here -->
     </header>
 
-    <main class=" w-11/12 mx-auto py-3 ">
+    <main  class=" w-11/12 mx-auto py-3 ">
 
+      <div id="main-id" >
       <!-- first card -->
       <div>
         <!-- modal start here -->
@@ -106,7 +107,7 @@
                     </div>
                   </div>
                 
-              <h2 class="card-title">Donate for Flood at Feni, Bangladesh</h2>
+              <h2 id="card-title-1" class="card-title">Donate for Flood at Feni, Bangladesh</h2>
               <p>Southeastern Bangladesh is currently enduring a devastating flood crisis due to continuous heavy rainfall and the rising levels of rivers. Regions of Feni, Comilla, and Noakhali are among the hardest hit, where entire communities have been cut off as roads and highways are submerged, leaving over 1.5 million people stranded.JAAGO Foundation is stepping in to provide critical relief in these flood-stricken areas. Through our youth wing, Volunteer for Bangladesh, we are distributing dry foods and providing medical assistance in Feni, Comilla, and Noakhali regions. Once the waters recede, our volunteers will work tirelessly to rehabilitate the affected families.</p>
               <input
                 type="text"
@@ -203,7 +204,7 @@
                     </div>
                   </div>
                 
-              <h2 class="card-title">Donate for quota-protest injured people of Bangladesh</h2>
+              <h2 class="card-title">Donate for quota-protest injured people of, Bangladesh</h2>
               <p>Southeastern Bangladesh is currently enduring a devastating flood crisis due to continuous heavy rainfall and the rising levels of rivers. Regions of Feni, Comilla, and Noakhali are among the hardest hit, where entire communities have been cut off as roads and highways are submerged, leaving over 1.5 million people stranded.JAAGO Foundation is stepping in to provide critical relief in these flood-stricken areas. Through our youth wing, Volunteer for Bangladesh, we are distributing dry foods and providing medical assistance in Feni, Comilla, and Noakhali regions. Once the waters recede, our volunteers will work tirelessly to rehabilitate the affected families.</p>
               <input
                 type="text"
@@ -219,8 +220,18 @@
             </div>
           </div>
         </div>
+      </div>
+        <div id="history-container" >
+
+        </div>
+        
     </main>
  
+    <footer>
+      
+    </footer>
+    <script src="./js/history.js"></script>
+    <script src="./js/toggle.js"></script>
     <script src="./js/ultilities.js"></script>
     <script src="./js/modal.js"></script>
    <script src="./js/cashout.js"></script>
