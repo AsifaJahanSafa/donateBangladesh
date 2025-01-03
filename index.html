@@ -21,7 +21,7 @@
       </script>
 </head>
 <body class="relative z-50">
-    <header id="header" class="sticky top-0">
+    <header id="header" class="sticky top-0 z-10 backdrop-blur-lg pb-5">
     <div class=" bg-nav-bg ">
         <div class="w-11/12 mx-auto py-3">
             <!-- nav bar start here -->
@@ -29,15 +29,9 @@
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                      <button class="btn btn-active px-8 font-bold bg-btn-bg">Blog</button>
+                      <button id="blog-button" class="btn btn-active px-8 font-bold bg-btn-bg">Blog</button>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Homepage</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>About</a></li>
-                    </ul>
+                   
                   </div>
                 </div>
                 <div class="navbar-center gap-3 hidden lg:flex ">
@@ -205,7 +199,7 @@
                   </div>
                 
               <h2 id="card-title-3" class="card-title">Donate for quota-protest injured people of, Bangladesh</h2>
-              <p>Southeastern Bangladesh is currently enduring a devastating flood crisis due to continuous heavy rainfall and the rising levels of rivers. Regions of Feni, Comilla, and Noakhali are among the hardest hit, where entire communities have been cut off as roads and highways are submerged, leaving over 1.5 million people stranded.JAAGO Foundation is stepping in to provide critical relief in these flood-stricken areas. Through our youth wing, Volunteer for Bangladesh, we are distributing dry foods and providing medical assistance in Feni, Comilla, and Noakhali regions. Once the waters recede, our volunteers will work tirelessly to rehabilitate the affected families.</p>
+              <p>Donate to support the injured people of the Bangladesh quota protest. Your contribution can help provide much-needed care and relief during this critical time."Stand with the victims of the Bangladesh quota protest and help those who are suffering. Every donation brings hope and healing to those in need.</p>
               <input
                 type="text"
                 placeholder="Write your donation Amount"
@@ -232,7 +226,8 @@
     <footer>
       
     </footer>
-    
+  
+    <script src="./js/blog.js"></script>
     <script src="./js/toggle.js"></script>
     <script src="./js/history.js"></script>
     <script src="./js/ultilities.js"></script>
