@@ -3,9 +3,10 @@ document.getElementById('history-btn').addEventListener('click',function(){
     const mainId=document.getElementById('main-id');
     mainId.classList.add('hidden');
     
-    const historyCon=document.getElementById('history-container');
-    historyCon.classList.remove('hidden')
-
+   
+    const container=document.getElementById('his-container');
+    container.classList.remove('hidden');
+    console.log(container)
     
 
 
@@ -24,8 +25,8 @@ document.getElementById('donation-btn').addEventListener('click',function(event)
     const mainId=document.getElementById('main-id');
     mainId.classList.remove('hidden');
      
-    const historyCon=document.getElementById('history-container');
-    historyCon.classList.add('hidden')
+    const container=document.getElementById('his-container');
+    container.classList.add('hidden');
 
     const donationBtn=document.getElementById('donation-btn');
     donationBtn.classList.add('bg-btn-bg')

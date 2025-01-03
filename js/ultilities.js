@@ -26,3 +26,5 @@ function opacity(id){
 function opacityRemove(id){
     document.getElementById(id).classList.remove('blur-sm')
 }
+
+

@@ -44,6 +44,7 @@ document.getElementById('addMoney-btn-2').addEventListener('click',function(){
     const headerBlur=opacity('header');
     const cardBlur=opacity('card-id');
     const cardId2=opacity('card-id-2')
+    const cardId3=opacity('card-id-3')
     console.log(modal)
 })
 
@@ -54,6 +55,7 @@ document.getElementById('modal-id-2').addEventListener('click',function(){
     
     const card2BlurRemove=opacityRemove('card-id-2')
     const card1BlurRemove=opacityRemove('card-id')
+    const card3BlurRemove=opacityRemove('card-id-3')
     const headerBlurRemove=opacityRemove('header')
     
     console.log(modalOff)
