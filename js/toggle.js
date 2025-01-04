@@ -6,7 +6,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
    
     const container=document.getElementById('his-container');
     container.classList.remove('hidden');
-    console.log(container)
+   
     
 
 
